@@ -2,20 +2,31 @@
 
 <asp:Content ID="student_view" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div id="teacher" runat="server">
-        <h2>Add New Entry</h2>
-        First Name: <span id="teacher_fname" runat="server"></span>
+    <div id="newTeacherForm" runat="server">
+        <h2>Add New Teacher:</h2>
+        <label for="teacherFname">First Name:</label>
+        <asp:TextBox runat="server" ID="teacherFName" name="teacherFName"></asp:TextBox>
+        <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Required Field" ControlToValidate="teacherFName" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
-        Last Name: <span id="teacher_lname" runat="server"></span>
+
+        <label for="teacherLName">Last Name:</label>
+        <asp:TextBox runat="server" ID="teacherLName" name="teacherLName"></asp:TextBox>
+        <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Required Field" ControlToValidate="teacherLName" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
-        Employee Number: <span id="employee_number" runat="server"></span>
+
+        <label for="employeeNumber">Employee Number:</label>
+        <asp:TextBox runat="server" ID="employeeNumber" name="employeeNumber"></asp:TextBox>
+        <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Required Field" ControlToValidate="employeeNumber" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
-        Hire Date: <span id="hire_date" runat="server"></span>
+
+        <label for="hireDate">Hire Date:</label>
+        <asp:TextBox runat="server" ID="hireDate" name="hireDate"></asp:TextBox>
+        <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Required Field" ControlToValidate="hireDate" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
-        <asp:Button Text="Update Entry" runat="server" />
-        <asp:Button runat="server" Text="Delete entry" ID="deleteButton" OnClick="DeleteButton_Click" OnClientClick="return confirm('Are you sure you would like to delete this entry?');" />
+
+        <button type="button" onclick="location.href='Teachers.aspx'">Go Back</button>
+        <asp:Button runat="server" Text="Add New Entry" ID="addbutton" OnClick="AddButton_Click" />
     </div>
-    <button type="button" onclick="location.href='Teachers.aspx'">Go back</button>
 
 
 </asp:Content>

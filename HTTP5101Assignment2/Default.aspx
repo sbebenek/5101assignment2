@@ -4,7 +4,8 @@
 
     <div class="jumbotron">
         <h1>Welcome To Your School Database!</h1>
-        <p class="lead">Click on the links to access the students, teachers, and classes data!</p>
+        <p class="lead">Click on the links above to access the students, teachers, and classes data!</p>
+        <p>Created by Sam Bebenek and Harpreet</p>
     </div>
 
 </asp:Content>

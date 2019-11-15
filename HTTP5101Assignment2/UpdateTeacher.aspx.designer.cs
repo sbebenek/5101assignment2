@@ -10,78 +10,87 @@
 namespace HTTP5101Assignment2 {
     
     
-    public partial class WebForm1 {
+    public partial class UpdateTeacher {
         
         /// <summary>
-        /// teacher control.
+        /// banana control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl banana;
         
         /// <summary>
-        /// teacher_title_fname control.
+        /// updateTeacherForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_title_fname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updateTeacherForm;
         
         /// <summary>
-        /// teacher_fname control.
+        /// teacher_FullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_fname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_FullName;
         
         /// <summary>
-        /// teacher_lname control.
+        /// teacher_FName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_lname;
+        protected global::System.Web.UI.WebControls.TextBox teacher_FName;
         
         /// <summary>
-        /// employee_number control.
+        /// teacher_LName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl employee_number;
+        protected global::System.Web.UI.WebControls.TextBox teacher_LName;
         
         /// <summary>
-        /// hire_date control.
+        /// employee_Number control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl hire_date;
+        protected global::System.Web.UI.WebControls.TextBox employee_Number;
         
         /// <summary>
-        /// updateButton control.
+        /// hire_Date control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button updateButton;
+        protected global::System.Web.UI.WebControls.TextBox hire_Date;
         
         /// <summary>
-        /// deleteButton control.
+        /// back_button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button deleteButton;
+        protected global::System.Web.UI.WebControls.Button back_button;
+        
+        /// <summary>
+        /// add_button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button add_button;
     }
 }

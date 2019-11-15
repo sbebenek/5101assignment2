@@ -13,5 +13,12 @@ namespace HTTP5101Assignment2
         {
 
         }
+
+        protected void AddButton_Click(Object sender,
+                       EventArgs e)
+        {
+            //**DATABASE ADD CODE GOES HERE
+            Response.Redirect("Teachers.aspx?cmd=added");
+        }
     }
 }

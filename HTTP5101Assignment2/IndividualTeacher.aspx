@@ -12,8 +12,8 @@
         <br />
         Hire Date: <span id="hire_date" runat="server"></span>
         <br />
-        <asp:Button Text="Update Entry" runat="server" />
-        <asp:Button runat="server" Text="Delete entry" ID="deleteButton" OnClick="DeleteButton_Click" OnClientClick="return confirm('Are you sure you would like to delete this entry?');" />
+        <asp:Button runat="server" Text="Update Entry" ID="updateButton" OnClick="UpdateButton_Click" />
+        <asp:Button runat="server" Text="Delete Entry" ID="deleteButton" OnClick="DeleteButton_Click" OnClientClick="return confirm('Are you sure you would like to delete this entry?');" />
     </div>
     <button type="button" onclick="location.href='Teachers.aspx'">Go back</button>
 
