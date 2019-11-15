@@ -15,7 +15,7 @@ using System.Web;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
 
-namespace HTTP5101_School_System
+namespace HTTP5101Assignment2
 {
     public class SCHOOLDB
     {
