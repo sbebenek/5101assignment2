@@ -48,6 +48,7 @@ namespace HTTP5101Assignment2
             if (!valid)
             {
                 teacher.InnerHtml = "There was an error finding that teacher.";
+
             }
 
 

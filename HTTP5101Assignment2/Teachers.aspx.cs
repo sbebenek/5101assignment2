@@ -22,9 +22,6 @@ namespace HTTP5101Assignment2
             }
 
 
-
-
-
             //DATABASE READING CODE
             var db = new SCHOOLDB();
            
@@ -37,22 +34,22 @@ namespace HTTP5101Assignment2
                     "</tr></thead><tbody>";
             foreach (Dictionary<String, String> row in rs)
             {
-                string studentid = row["TEACHERID"];
-                students_result.InnerHtml += "<a href=\"IndividualTeacher.aspx?teacherid=" + studentid + "\"><tr>";
+                string teacherid = row["TEACHERID"];
+                students_result.InnerHtml += "<a href=\"IndividualTeacher.aspx?teacherid=" + teacherid + "\"><tr>";
 
 
 
-                string studentfirstname = row["TEACHERFNAME"];
-                students_result.InnerHtml += "<td>" + studentfirstname + "</td>";
+                string teacherfirstname = row["TEACHERFNAME"];
+                students_result.InnerHtml += "<td>" + teacherfirstname + "</td>";
 
-                string studentlastname = row["TEACHERLNAME"];
-                students_result.InnerHtml += "<td>" + studentlastname + "</td>";
+                string teacherlastname = row["TEACHERLNAME"];
+                students_result.InnerHtml += "<td>" + teacherlastname + "</td>";
 
-                string studentnumber = row["EMPLOYEENUMBER"];
-                students_result.InnerHtml += "<td>" + studentnumber + "</td>";
+                string employeenumber = row["EMPLOYEENUMBER"];
+                students_result.InnerHtml += "<td>" + employeenumber + "</td>";
 
-                string enrolmentdate = row["HIREDATE"];
-                students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
+                string hiredate = row["HIREDATE"];
+                students_result.InnerHtml += "<td>" + hiredate + "</td>";
 
                 students_result.InnerHtml += "</tr></a>";
             }
@@ -76,20 +73,20 @@ namespace HTTP5101Assignment2
                 List<Dictionary<String, String>> rows = db.List_Query("select * from TEACHERS where TEACHERFNAME like '%" + searchValue + "%' or TEACHERLNAME like '%" + searchValue + "%' or EMPLOYEENUMBER  like '%" + searchValue + "%' order by teacherfname asc");
                 foreach (Dictionary<String, String> row in rows)
                 {
-                    string studentid = row["TEACHERID"];
-                    students_result.InnerHtml += "<a href=\"IndividualTeacher.aspx?teacherid=" + studentid + "\"><tr>";
+                    string teacherid = row["TEACHERID"];
+                    students_result.InnerHtml += "<a href=\"IndividualTeacher.aspx?teacherid=" + teacherid + "\"><tr>";
 
-                    string studentfirstname = row["TEACHERFNAME"];
-                    students_result.InnerHtml += "<td>" + studentfirstname + "</td>";
+                    string teacherfirstname = row["TEACHERFNAME"];
+                    students_result.InnerHtml += "<td>" + teacherfirstname + "</td>";
 
-                    string studentlastname = row["TEACHERLNAME"];
-                    students_result.InnerHtml += "<td>" + studentlastname + "</td>";
+                    string teacherlastname = row["TEACHERLNAME"];
+                    students_result.InnerHtml += "<td>" + teacherlastname + "</td>";
 
-                    string studentnumber = row["EMPLOYEENUMBER"];
-                    students_result.InnerHtml += "<td>" + studentnumber + "</td>";
+                    string employeenumber = row["EMPLOYEENUMBER"];
+                    students_result.InnerHtml += "<td>" + employeenumber + "</td>";
 
-                    string enrolmentdate = row["HIREDATE"];
-                    students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
+                    string hiredate = row["HIREDATE"];
+                    students_result.InnerHtml += "<td>" + hiredate + "</td>";
 
                     students_result.InnerHtml += "</tr></a>";
                 }

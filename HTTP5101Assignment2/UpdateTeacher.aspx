@@ -2,8 +2,6 @@
 
 <asp:Content ID="teacher_update" ContentPlaceHolderID="MainContent" runat="server">
 
-    <p runat="server" id="banana"></p>
-
     <div id="updateTeacherForm" runat="server">
         <h2>Update Teacher: <span runat="server" id="teacher_FullName" ></span></h2>
         <label for="teacher_Fname">First Name:</label>

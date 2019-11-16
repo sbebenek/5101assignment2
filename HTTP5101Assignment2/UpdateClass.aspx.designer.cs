@@ -10,61 +10,70 @@
 namespace HTTP5101Assignment2 {
     
     
-    public partial class UpdateTeacher {
+    public partial class UpdateClass {
         
         /// <summary>
-        /// updateTeacherForm control.
+        /// updateClassForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updateTeacherForm;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updateClassForm;
         
         /// <summary>
-        /// teacher_FullName control.
+        /// classTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_FullName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl classTitle;
         
         /// <summary>
-        /// teacher_FName control.
+        /// classCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox teacher_FName;
+        protected global::System.Web.UI.WebControls.TextBox classCode;
         
         /// <summary>
-        /// teacher_LName control.
+        /// className control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox teacher_LName;
+        protected global::System.Web.UI.WebControls.TextBox className;
         
         /// <summary>
-        /// employee_Number control.
+        /// employeeNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox employee_Number;
+        protected global::System.Web.UI.WebControls.TextBox employeeNumber;
         
         /// <summary>
-        /// hire_Date control.
+        /// startDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hire_Date;
+        protected global::System.Web.UI.WebControls.TextBox startDate;
+        
+        /// <summary>
+        /// finishDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox finishDate;
         
         /// <summary>
         /// back_button control.
