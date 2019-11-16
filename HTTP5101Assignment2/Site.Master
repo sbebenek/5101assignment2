@@ -39,34 +39,27 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Assignment 2</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Teachers">Teachers</a></li>
-                        <li><a runat="server" href="~/Students">Students</a></li>
-                        <li><a runat="server" href="~/Classes">Classes</a></li>
-                    </ul>
-                </div>
+       
+        <div class="row fixed-top">
+            <div class="col-2 bg-light">
+              <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                <a runat="server" href="~/" class="nav-link h1" role="tab">Home</a>
+                <a runat="server" href="~/Teachers" class="nav-link h3"  role="tab">Teachers</a>
+                <a runat="server" href="~/Students" class="nav-link h3"  role="tab">Students</a>
+                <a runat="server" href="~/Classes" class="nav-link h3"  role="tab">Classes</a>
+              </div>
             </div>
-        </div>
-        <div class="container body-content">
+            <div class="body-content col-8">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
+            
+        </div>
+        </div>
+       
+        
+        <footer class="copyright text-center bg-dark text-light fixed-bottom">
                 <p>&copy; <%: DateTime.Now.Year %> Copyright Development</p>
             </footer>
-        </div>
-
     </form>
 </body>
 </html>
