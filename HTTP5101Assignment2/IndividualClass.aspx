@@ -2,22 +2,55 @@
 
 <asp:Content ID="student_view" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div id="class_content" runat="server">
-        <h2>Details for <span id="class_title" runat="server"></span></h2>
-        Class Code: <span id="class_code" runat="server"></span>
+<%--    <div  runat="server">
+        <h2></h2>
+        Class Code: 
         <br />
-        Class Name: <span id="class_name" runat="server"></span>
+        Class Name: 
         <br />
-        Teacher: <span id="teacher" runat="server"></span>
+        Teacher: 
         <br />
-        Start Date: <span id="start_date" runat="server"></span>
+        : 
         <br />
-        Finish Date: <span id="finish_date" runat="server"></span>
+        : 
         <br />
-        <asp:Button runat="server" Text="Update Entry" ID="updateButton" OnClick="UpdateButton_Click" />
-        <asp:Button runat="server" Text="Delete Entry" ID="deleteButton" OnClick="DeleteButton_Click" OnClientClick="return confirm('Are you sure you would like to delete this entry?');" />
+        
     </div>
-    <button type="button" onclick="location.href='Classes.aspx'">Go back</button>
-
+    <button type="button" onclick="location.href='Classes.aspx'">Go back</button>--%>
+    <div class="card text-white bg-light mb-3" style="max-width: 50%;" id="class_content" runat="server">
+        <div class="card-header text-dark">Details for <span id="class_title" runat="server"></span></div>
+        <div class="card-body">
+            <table class="table table-condensed">
+                <tbody>
+                    <tr>
+                        <td>Class Code</td>
+                        <td><span id="class_code" runat="server"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Class Name</td>
+                        <td><span id="class_name" runat="server"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Teacher</td>
+                        <td><span id="teacher" runat="server"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Start Date</td>
+                        <td><span id="start_date" runat="server"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Finish Date</td>
+                        <td><span id="finish_date" runat="server"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-group">
+                <asp:Button runat="server" Text="Update Entry" ID="updateButton" OnClick="UpdateButton_Click" CssClass="btn btn-warning" />
+                <asp:Button runat="server" Text="Delete Entry" ID="deleteButton" OnClick="DeleteButton_Click" OnClientClick="return confirm('Are you sure you would like to delete this entry?');" cssClass="btn btn-danger"/>
+                <button type="button" onclick="location.href='Classes.aspx'" class="btn btn-primary">Go back</button>
+            </div>
+            
+        </div>
+    </div>
 
 </asp:Content>

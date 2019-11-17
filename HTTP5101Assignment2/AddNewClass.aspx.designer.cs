@@ -22,6 +22,15 @@ namespace HTTP5101Assignment2 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl newClassForm;
         
         /// <summary>
+        /// classTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl classTitle;
+        
+        /// <summary>
         /// classCode control.
         /// </summary>
         /// <remarks>

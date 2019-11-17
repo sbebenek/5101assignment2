@@ -13,15 +13,6 @@ namespace HTTP5101Assignment2 {
     public partial class UpdateTeacher {
         
         /// <summary>
-        /// updateTeacherForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updateTeacherForm;
-        
-        /// <summary>
         /// teacher_FullName control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace HTTP5101Assignment2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_FullName;
+        
+        /// <summary>
+        /// updateTeacherForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updateTeacherForm;
         
         /// <summary>
         /// teacher_FName control.

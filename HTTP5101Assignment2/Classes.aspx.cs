@@ -35,7 +35,7 @@ namespace HTTP5101Assignment2
             foreach (Dictionary<String, String> row in rs)
             {
                 string classid = row["CLASSID"];
-                students_result.InnerHtml += "<a href=\"IndividualClass.aspx?classid=" + classid + "\"><tr>";
+                students_result.InnerHtml += "<tr>";
 
 
 
@@ -43,7 +43,7 @@ namespace HTTP5101Assignment2
                 students_result.InnerHtml += "<td>" + classcode + "</td>";
 
                 string classname = row["CLASSNAME"];
-                students_result.InnerHtml += "<td>" + classname + "</td>";
+                students_result.InnerHtml += "<td><a href=\"IndividualClass.aspx?classid=" + classid + "\">" + classname + "</a></td>";
 
                 string teacher = row["TEACHERFNAME"] + " " + row["TEACHERLNAME"];
                 students_result.InnerHtml += "<td>" + teacher + "</td>";
@@ -54,7 +54,7 @@ namespace HTTP5101Assignment2
                 string finishdate = row["FINISHDATE"];
                 students_result.InnerHtml += "<td>" + finishdate + "</td>";
 
-                students_result.InnerHtml += "</tr></a>";
+                students_result.InnerHtml += "</tr>";
             }
             students_result.InnerHtml += "</tbody><table>";
 
