@@ -2,7 +2,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h4 class="text-center">Classes</h4>
     <!--Line Below will be updated if page is being reached after CRUD functions are made in other pages (Shown in url with GET methods)-->
-    <div id="commandConfirm" runat="server"></div>
+    <div id="commandDiv" runat="server" class="alert alert-success w-25">
+        <p id="commandConfirm" runat="server"></p>
+    </div>
     <div class="form-inline">
         <div class="form-group mb-4">
             <label for="search_value" class="col-sm-2 col-form-lable">Search:</label>

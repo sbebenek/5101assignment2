@@ -126,6 +126,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddNewClass.aspx" />
+    <Content Include="AddNewStudent.aspx" />
     <Content Include="AddNewTeacher.aspx" />
     <Content Include="Classes.aspx" />
     <Content Include="Contact.aspx" />
@@ -140,6 +141,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="IndividualClass.aspx" />
+    <Content Include="IndividualStudent.aspx" />
     <Content Include="IndividualTeacher.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -202,6 +204,7 @@
     <Content Include="Students.aspx" />
     <Content Include="Teachers.aspx" />
     <Content Include="UpdateClass.aspx" />
+    <Content Include="UpdateStudent.aspx" />
     <Content Include="UpdateTeacher.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -215,6 +218,13 @@
     </Compile>
     <Compile Include="AddNewClass.aspx.designer.cs">
       <DependentUpon>AddNewClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewStudent.aspx.cs">
+      <DependentUpon>AddNewStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewStudent.aspx.designer.cs">
+      <DependentUpon>AddNewStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddNewTeacher.aspx.cs">
       <DependentUpon>AddNewTeacher.aspx</DependentUpon>
@@ -245,6 +255,13 @@
     </Compile>
     <Compile Include="IndividualClass.aspx.designer.cs">
       <DependentUpon>IndividualClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualStudent.aspx.cs">
+      <DependentUpon>IndividualStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndividualStudent.aspx.designer.cs">
+      <DependentUpon>IndividualStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="SCHOOLDB.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -299,6 +316,13 @@
     </Compile>
     <Compile Include="UpdateClass.aspx.designer.cs">
       <DependentUpon>UpdateClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent.aspx.cs">
+      <DependentUpon>UpdateStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent.aspx.designer.cs">
+      <DependentUpon>UpdateStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateTeacher.aspx.cs">
       <DependentUpon>UpdateTeacher.aspx</DependentUpon>

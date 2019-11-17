@@ -11,10 +11,13 @@ namespace HTTP5101Assignment2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Disabling view of command div because it shows on load
+            commandDiv.Visible = false;
             //Checking if page was reached after a CRUD command was just done on another page
             string command = Request.QueryString["cmd"];
             if (!String.IsNullOrEmpty(command))
             {
+                commandDiv.Visible = true;
                 commandConfirm.InnerHtml = "Entry " + command;
             }
 
@@ -62,7 +65,7 @@ namespace HTTP5101Assignment2
             {
                 //clearing command div (no longer necessary after search is preformed)
                 commandConfirm.InnerHtml = "";
-
+                commandDiv.Visible = false;
                 string searchValue = search_value.Text.ToString();
                 students_result.InnerHtml = "";
                 students_result.InnerHtml += "<table class=\"table\"><thead><tr>" +
@@ -79,14 +82,14 @@ namespace HTTP5101Assignment2
                 foreach (Dictionary<String, String> row in rows)
                 {
                     string classid = row["CLASSID"];
-                    students_result.InnerHtml += "<a href=\"IndividualClass.aspx?classid=" + classid + "\"><tr>";
+                    students_result.InnerHtml += "<tr>";
 
 
                     string classcode = row["CLASSCODE"];
                     students_result.InnerHtml += "<td>" + classcode + "</td>";
 
                     string classname = row["CLASSNAME"];
-                    students_result.InnerHtml += "<td>" + classname + "</td>";
+                    students_result.InnerHtml += "<td><a href=\"IndividualClass.aspx?classid=" + classid + "\">" + classname + "</a></td>";
 
                     string teacher = row["TEACHERFNAME"] + " " + row["TEACHERLNAME"];
                     students_result.InnerHtml += "<td>" + teacher + "</td>";
@@ -97,7 +100,7 @@ namespace HTTP5101Assignment2
                     string finishdate = row["FINISHDATE"];
                     students_result.InnerHtml += "<td>" + finishdate + "</td>";
 
-                    students_result.InnerHtml += "</tr></a>";
+                    students_result.InnerHtml += "</tr>";
                 }
                 students_result.InnerHtml += "</tbody><table>";
             }

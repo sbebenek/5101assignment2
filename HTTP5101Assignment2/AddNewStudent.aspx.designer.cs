@@ -10,42 +10,60 @@
 namespace HTTP5101Assignment2 {
     
     
-    public partial class Students {
+    public partial class AddNewStudent {
         
         /// <summary>
-        /// commandDiv control.
+        /// newStudentForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl commandDiv;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl newStudentForm;
         
         /// <summary>
-        /// commandConfirm control.
+        /// studentFName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl commandConfirm;
+        protected global::System.Web.UI.WebControls.TextBox studentFName;
         
         /// <summary>
-        /// search_value control.
+        /// studentLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox search_value;
+        protected global::System.Web.UI.WebControls.TextBox studentLName;
         
         /// <summary>
-        /// students_result control.
+        /// studentNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl students_result;
+        protected global::System.Web.UI.WebControls.TextBox studentNumber;
+        
+        /// <summary>
+        /// enrolmentDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox enrolmentDate;
+        
+        /// <summary>
+        /// addbutton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addbutton;
     }
 }

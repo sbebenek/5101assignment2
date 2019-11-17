@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="IndividualTeacher.aspx.cs" Inherits="HTTP5101Assignment2.WebForm1" %>
 
-<asp:Content ID="student_view" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="teacher_view" ContentPlaceHolderID="MainContent" runat="server">
 
     <%--<div id="teacher" runat="server">
         <h4></h4>

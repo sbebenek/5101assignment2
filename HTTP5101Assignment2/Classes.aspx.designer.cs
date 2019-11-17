@@ -13,6 +13,15 @@ namespace HTTP5101Assignment2 {
     public partial class Classes {
         
         /// <summary>
+        /// commandDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl commandDiv;
+        
+        /// <summary>
         /// commandConfirm control.
         /// </summary>
         /// <remarks>

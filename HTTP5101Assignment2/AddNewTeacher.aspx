@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddNewTeacher.aspx.cs" Inherits="HTTP5101Assignment2.AddNewTeacher" %>
 
-<asp:Content ID="student_view" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="teacher_view" ContentPlaceHolderID="MainContent" runat="server">
 
     <div id="newTeacherForm" runat="server">
         <div class="card text-dark bg-light mb-3" style="max-width: 75%;"  runat="server">

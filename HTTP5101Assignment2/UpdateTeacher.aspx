@@ -1,12 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateTeacher.aspx.cs" Inherits="HTTP5101Assignment2.UpdateTeacher" %>
 
 <asp:Content ID="teacher_update" ContentPlaceHolderID="MainContent" runat="server">
-
-
-        <h2></h2>
-  
-        
-        
+       
     <div class="card text-dark bg-light mb-3" style="max-width: 75%;"  runat="server">
         <div class="card-header text-dark">Update Teacher: <span runat="server" id="teacher_FullName" ></span></div>
         <div class="card-body">

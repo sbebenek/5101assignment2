@@ -14,10 +14,13 @@ namespace HTTP5101Assignment2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Disabling view of command div because it shows on load
+            commandDiv.Visible = false;
             //Checking if page was reached after a CRUD command was just done on another page
             string command = Request.QueryString["cmd"];
             if (!String.IsNullOrEmpty(command))
             {
+                commandDiv.Visible = true;
                 commandConfirm.InnerHtml = "Entry " + command;
             }
 
@@ -59,7 +62,7 @@ namespace HTTP5101Assignment2
             {
                 //clearing command div (no longer necessary after search is preformed)
                 commandConfirm.InnerHtml = "";
-
+                commandDiv.Visible = false;
                 string searchValue = search_value.Text.ToString();
                 students_result.InnerHtml = "";
                 students_result.InnerHtml += "<table class=\"table\"><thead><tr>" +
@@ -74,10 +77,10 @@ namespace HTTP5101Assignment2
                 foreach (Dictionary<String, String> row in rows)
                 {
                     string teacherid = row["TEACHERID"];
-                    students_result.InnerHtml += "<a href=\"IndividualTeacher.aspx?teacherid=" + teacherid + "\"><tr>";
+                    students_result.InnerHtml += "<tr>";
 
                     string teacherfirstname = row["TEACHERFNAME"];
-                    students_result.InnerHtml += "<td>" + teacherfirstname + "</td>";
+                    students_result.InnerHtml += "<td><a href=\"IndividualTeacher.aspx?teacherid=" + teacherid + "\">" + teacherfirstname + "</a></td>";
 
                     string teacherlastname = row["TEACHERLNAME"];
                     students_result.InnerHtml += "<td>" + teacherlastname + "</td>";
@@ -88,7 +91,7 @@ namespace HTTP5101Assignment2
                     string hiredate = row["HIREDATE"];
                     students_result.InnerHtml += "<td>" + hiredate + "</td>";
 
-                    students_result.InnerHtml += "</tr></a>";
+                    students_result.InnerHtml += "</tr>";
                 }
                 students_result.InnerHtml += "</tbody><table>";
             }
