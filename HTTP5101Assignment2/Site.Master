@@ -16,7 +16,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body class="pt-0">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -39,26 +39,27 @@
             </Scripts>
         </asp:ScriptManager>
 
-       
-        <div class="row fixed-top">
-            <div class="col-2 bg-light">
-              <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
-                <a runat="server" href="~/" class="nav-link h1" role="tab">Home</a>
-                <a runat="server" href="~/Teachers" class="nav-link h3"  role="tab">Teachers</a>
-                <a runat="server" href="~/Students" class="nav-link h3"  role="tab">Students</a>
-                <a runat="server" href="~/Classes" class="nav-link h3"  role="tab">Classes</a>
-              </div>
-            </div>
-            <div class="body-content col-8">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+           <div class="row">
+                <div class="col-2 bg-light">
+                  <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                    <a runat="server" href="~/" class="nav-link h1" role="tab">Home</a>
+                    <a runat="server" href="~/Teachers" class="nav-link h3"  role="tab">Teachers</a>
+                    <a runat="server" href="~/Students" class="nav-link h3"  role="tab">Students</a>
+                    <a runat="server" href="~/Classes" class="nav-link h3"  role="tab">Classes</a>
+                  </div>
+                </div>
+                <div class="body-content col-8">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
             
-        </div>
-        </div>
+                </div>
+            </div>
+        
        
         
-        <footer class="copyright text-center bg-dark text-light fixed-bottom">
+        <footer class="text-white bg-dark text-center mt-4">
                 <p>&copy; <%: DateTime.Now.Year %> Copyright Development</p>
+                
             </footer>
     </form>
 </body>

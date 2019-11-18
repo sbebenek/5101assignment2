@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="student_Number" class="col-sm-3 col-form-label">Employee Number:</label>
+                    <label for="student_Number" class="col-sm-3 col-form-label">Student Number:</label>
                     <div class="col-sm-5">
                         <asp:TextBox runat="server" ID="studentNumber" name="studentNumber"></asp:TextBox>
                         <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Required Field" ControlToValidate="studentNumber" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>

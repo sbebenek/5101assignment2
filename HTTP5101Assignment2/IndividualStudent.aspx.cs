@@ -59,7 +59,7 @@ namespace HTTP5101Assignment2
             //**DATABASE DELETE CODE GOES HERE
 
             //Putting command=deleted in URL to confirm to Teachers page that something was just deleted
-            Response.Redirect("Student.aspx?cmd=deleted");
+            Response.Redirect("Students.aspx?cmd=deleted");
         }
 
         //Update entry button clicked

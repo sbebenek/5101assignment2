@@ -3,7 +3,7 @@
     <h4 class="text-center">Classes</h4>
     <!--Line Below will be updated if page is being reached after CRUD functions are made in other pages (Shown in url with GET methods)-->
     <div id="commandDiv" runat="server" class="alert alert-success w-25">
-        <p id="commandConfirm" runat="server"></p>
+        <p id="commandConfirm" runat="server" class="mb-0"></p>
     </div>
     <div class="form-inline">
         <div class="form-group mb-4">
