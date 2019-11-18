@@ -25,12 +25,18 @@ namespace HTTP5101Assignment2
             //DATABASE READING CODE
             var db = new SCHOOLDB();
 
-            List<Dictionary<String, String>> rs = db.List_Query("select * from STUDENTS order by STUDENTFNAME asc");
+            //SELECT students.*,COUNT(`STUDENTNUMBER`) FROM STUDENTS
+            //JOIN STUDENTSXCLASSES
+            //ON STUDENTSXCLASSES.`STUDENTID` = STUDENTS.`STUDENTID`
+            //GROUP BY `STUDENTID`;
+
+            List<Dictionary<String, String>> rs = db.List_Query("select STUDENTS.*,count(studentnumber) as 'Enrolled classes' from STUDENTS join STUDENTSXCLASSES on STUDENTSXCLASSES.STUDENTID = STUDENTS.STUDENTID group by STUDENTS.STUDENTNUMBER order by STUDENTFNAME asc");
             students_result.InnerHtml += "<table class=\"table\"><thead><tr>" +
                     "<th>FIRST NAME</th>" +
                     "<th>LAST NAME</th>" +
                     "<th>STUDENT NUMBER</th>" +
                     "<th>ENROLMENT DATE</th>" +
+                    "<th>CLASSES ENROLED</th>" +
                     "</tr></thead><tbody>";
             foreach (Dictionary<String, String> row in rs)
             {
@@ -51,6 +57,9 @@ namespace HTTP5101Assignment2
                 string enrolmentdate = row["ENROLMENTDATE"];
                 students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
 
+                string enroledclasses = row["Enrolled classes"];
+                students_result.InnerHtml += "<td>" + enroledclasses + "</td>";
+
                 students_result.InnerHtml += "</tr>";
             }
             students_result.InnerHtml += "</tbody><table>";
@@ -68,10 +77,11 @@ namespace HTTP5101Assignment2
                     "<th>LAST NAME</th>" +
                     "<th>STUDENT NUMBER</th>" +
                     "<th>ENROLMENT DATE</th>" +
+                    "<th>CLASSES ENROLED</th>" +
                     "</tr></thead><tbody>";
 
 
-                List<Dictionary<String, String>> rows = db.List_Query("select * from STUDENTS where STUDENTFNAME like '%" + searchValue + "%' or STUDENTLNAME like '%" + searchValue + "%' or STUDENTNUMBER  like '%" + searchValue + "%' order by studentfname asc");
+                List<Dictionary<String, String>> rows = db.List_Query("select STUDENTS.*,count(studentnumber) as 'Enrolled classes' from STUDENTS join STUDENTSXCLASSES on STUDENTSXCLASSES.STUDENTID = STUDENTS.STUDENTID where STUDENTFNAME like '%" + searchValue + "%' or STUDENTLNAME like '%" + searchValue + "%' or STUDENTNUMBER  like '%" + searchValue + "%' group by STUDENTS.STUDENTNUMBER order by studentfname asc");
                 foreach (Dictionary<String, String> row in rows)
                 {
                     string studentid = row["STUDENTID"];
@@ -88,6 +98,9 @@ namespace HTTP5101Assignment2
 
                     string enrolmentdate = row["ENROLMENTDATE"];
                     students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
+
+                    string enroledclasses = row["Enrolled classes"];
+                    students_result.InnerHtml += "<td>" + enroledclasses + "</td>";
 
                     students_result.InnerHtml += "</tr>";
                 }
