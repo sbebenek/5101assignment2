@@ -47,7 +47,8 @@ namespace HTTP5101Assignment2
             }
             if (!valid)
             {
-                teacher.InnerHtml = "There was an error finding that teacher.";
+                error.InnerHtml = "There was an error finding that student.";
+                teacher.Visible = false;
 
             }
 

@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="IndividualStudent.aspx.cs" Inherits="HTTP5101Assignment2.IndividualStudent" %>
 <asp:Content ID="student_view" ContentPlaceHolderID="MainContent" runat="server">
+    <span id="error" runat="server"></span>
      <div class="card text-white bg-light mb-3" style="max-width: 50%;" id="student" runat="server">
         <div class="card-header text-dark">Details for <span id="student_title_fname" runat="server"></span></div>
         <div class="card-body">
@@ -21,6 +22,10 @@
                         <td>Enrolment Date</td>
                         <td><span id="enrolment_date" runat="server"></span></td>
                     </tr>
+                    <%--<tr>
+                        <td>Classes Enrolled</td>
+                        <td><span id="classes_enrolled" runat="server"></span></td>
+                    </tr>--%>
                 </tbody>
             </table>
             <div class="btn-group">

@@ -14,7 +14,7 @@
         <br />
         
     </div>--%>
-    
+    <span id="error" runat="server"></span>
     <div class="card text-white bg-light mb-3" style="max-width: 50%;" id="teacher" runat="server">
         <div class="card-header text-dark">Details for <span id="teacher_title_fname" runat="server"></span></div>
         <div class="card-body">

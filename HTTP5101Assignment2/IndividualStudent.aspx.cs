@@ -29,7 +29,7 @@ namespace HTTP5101Assignment2
             {
                 var db = new SCHOOLDB();
                 Dictionary<String, String> student_record = db.FindStudent(Int32.Parse(studentid));
-                List<Dictionary<String, String>> rs = db.List_Query("select * from students order by studentfname asc");
+                List<Dictionary<String, String>> rs = db.List_Query("select STUDENTS.*,count(studentnumber) as 'Enrolled classes' from STUDENTS join STUDENTSXCLASSES on STUDENTSXCLASSES.STUDENTID = STUDENTS.STUDENTID group by STUDENTS.STUDENTNUMBER order by STUDENTFNAME asc");
 
                 if (student_record.Count > 0)
                 {
@@ -38,6 +38,7 @@ namespace HTTP5101Assignment2
                     student_lname.InnerHtml = student_record["STUDENTLNAME"];
                     student_number.InnerHtml = student_record["STUDENTNUMBER"];
                     enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
+                    //classes_enrolled.InnerHtml = student_record["Enrolled classes"];
                 }
                 else
                 {
@@ -47,7 +48,8 @@ namespace HTTP5101Assignment2
             }
             if (!valid)
             {
-                student.InnerHtml = "There was an error finding that student.";
+                error.InnerHtml = "There was an error finding that student.";
+                student.Visible = false;
 
             }//end of if
         }

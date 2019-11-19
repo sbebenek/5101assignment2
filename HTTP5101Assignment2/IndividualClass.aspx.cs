@@ -53,7 +53,8 @@ namespace HTTP5101Assignment2
             }
             if (!valid)
             {
-                class_content.InnerHtml = "There was an error finding that class.";
+                error.InnerHtml = "There was an error finding that student.";
+                class_content.Visible = false;
             }
 
 

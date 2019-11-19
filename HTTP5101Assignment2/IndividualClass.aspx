@@ -17,6 +17,7 @@
         
     </div>
     <button type="button" onclick="location.href='Classes.aspx'">Go back</button>--%>
+    <span id="error" runat="server"></span>
     <div class="card text-white bg-light mb-3" style="max-width: 50%;" id="class_content" runat="server">
         <div class="card-header text-dark">Details for <span id="class_title" runat="server"></span></div>
         <div class="card-body">
