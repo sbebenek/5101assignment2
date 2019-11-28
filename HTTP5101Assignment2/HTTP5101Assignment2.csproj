@@ -143,6 +143,7 @@
     <Content Include="IndividualClass.aspx" />
     <Content Include="IndividualStudent.aspx" />
     <Content Include="IndividualTeacher.aspx" />
+    <Content Include="Wireframes\SamBebenekWireframe.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
